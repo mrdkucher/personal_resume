@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="l-box">
+  <div class="pure-g">
+    <!-- <h1 class="pure-u-1">Hello world from Flask-Pure</h1> -->
+    <div class="pure-u-1">
+        <img class="pure-img" src="{{ url_for('static', filename='sierras.jpg') }}"/>
+    </div>
+    <h1>A little about me</h1>
+  </div>
+</div>
+{% endblock content %}
