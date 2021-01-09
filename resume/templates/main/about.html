@@ -1,8 +1,67 @@
 {% extends 'base.html' %}
 
+{%  block nav %}
+<nav id="nav-wrap">
+    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+    <ul id="nav" class="nav">
+        <li><a href="{{ url_for('main.index') }}">Home</a></li>
+        <li class="current"><a href="{{ url_for('main.about') }}">About</a></li>
+        <li><a href="{{ url_for('main.resume') }}">Resume</a></li>
+        <li><a href="{{ url_for('main.projects') }}">Projects</a></li>
+        <!-- <li><a href="#">Contact</a></li> -->
+    </ul> <!-- end #nav -->
+
+</nav> <!-- end #nav-wrap -->
+{% endblock nav %}
+
 {% block content %}
-<!-- {{ super() }} -->
-<div class="pure-g">
-    <div class="pure-u-1">A little about me</div>
-</div>
+<!-- About Section
+================================================== -->
+<section id="about">
+    <div class="row">
+
+        <div class="three columns">
+
+            <img class="profile-pic" src="{{ url_for('static', filename='images/profile.png') }}" alt="" />
+
+        </div>
+
+        <div class="nine columns main-col">
+
+            <h3>About Me</h3>
+
+            <p> I'm a software engineer, coming soon to the Bay Area. I'm working on machine learning problems, 
+                leveraging dataflow hardware to run models with billions of parameters at unparalleld speed and
+                accuracy. I've also come to love good software engineering practices. <br><br>
+
+                In my spare time, I try to read books, play my guitar, stay active, and ride my motorcycle 
+                (it's almost fixed, I promise).
+            </p>
+
+            <div class="row">
+
+                <div class="columns contact-details">
+
+                    <h3>Connect</h3>
+                    <p class="address">
+                        <span>info <i class="fa fa-at"></i> davidkucher dot com</span>
+                        <ul class="social">
+                            <li><a href="https://www.linkedin.com/in/davidkucher/"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/mrdkucher"><i class="fa fa-lg fa-github"></i></a></li>
+                        </ul>
+                        <span class="social-links">
+                        </span>
+                    </p>
+
+                </div>
+
+            </div> <!-- end row -->
+
+        </div> <!-- end .main-col -->
+
+    </div>
+
+</section> <!-- About Section End-->
 {% endblock %}
