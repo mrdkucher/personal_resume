@@ -15,9 +15,19 @@ def about():
     return render_template('main/about.html')
 
 
+@bp.route("/resume")
+def resume():
+    return render_template('main/resume.html')
+
+
 @bp.route("/projects")
 def projects():
     return render_template('main/projects.html')
+
+# Disabled temporarily
+# @bp.route("/contact")
+# def contact():
+#     return render_template('main/contact.html')
 
 
 @bp.route("/show")
