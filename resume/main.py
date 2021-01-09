@@ -1,6 +1,5 @@
-from flask import Blueprint, flash, render_template, send_file
-
-import sys
+from flask import Blueprint, current_app, render_template, send_file
+import os
 
 
 bp = Blueprint('main', __name__)
@@ -23,6 +22,7 @@ def projects():
 
 @bp.route("/show")
 def show_static_pdf():
-    print(sys.path)
-    with open('kucher_resume/static/DavidKucherResume.pdf', 'rb') as static_file:
-        return send_file(static_file, attachment_filename='DavidKucherResume.pdf') # TODO, broken
+    file_url = os.path.join(current_app.root_path, 'static/DavidKucherResume.pdf')
+    return send_file(file_url, mimetype='pdf',
+                     attachment_filename='DavidKucherResume.pdf',
+                     as_attachment=True)
