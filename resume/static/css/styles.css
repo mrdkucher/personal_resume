@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --accent: rgb(102, 133, 117);
+    --minblue: rgba(96, 146, 168, 0.2);
+}
+
+html{
+    font-family: Lato, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.landing {
+    background: linear-gradient(var(--minblue), var(--minblue)), url(sierras.jpg);
+    background-size: 100%;
+    height: inherit;
+}
+
+img {
+    width: inherit;
+}
+
+.pure-menu {
+    background-color: gray;
+}
+
+.pure-menu-link {
+    color: black;
+}
+
+.pure-menu-link:hover {
+    background-color: var(--accent);
+} */
+
+.block-m {
+    width: 1.5em;
+    position: relative;
+    top: 0.5px;
+}
