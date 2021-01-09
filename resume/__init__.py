@@ -1,7 +1,6 @@
 import os
 
 from flask import Flask
-from flask_pure import Pure
 
 
 def create_app(test_config=None):
@@ -13,7 +12,6 @@ def create_app(test_config=None):
         PURECSS_USE_CDN=True,
         PURECSS_USE_MINIFIED=True
     )
-    Pure(app)
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
