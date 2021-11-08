@@ -4,3 +4,4 @@ Things I've learned:
 - CSS elements can have a single id
 - Nest CSS identifiers: e.g. ("#resume a:hover" will apply only to the element with id 'resume', with a child 'a' on the 'hover' action).
 - Cmd + Shift + R is the hard refresh on Mac (gets CSS to update)
+- Frozen Flask requires app routes to be configured with a trailing '/' to be read properly.
