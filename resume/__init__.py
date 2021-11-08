@@ -22,17 +22,12 @@ def create_app(test_config=None):
 
     # ensure the instance folder exists
     try:
-        os.makedirs(app.instance_path)
-    except OSError:
-        pass
-
-    # a simple page that says hello
-    @app.route('/hello')
-    def hello():
-        return 'Hello, World!'
+        os.makedirs(app.instance_path, exist_ok=True)
+    except OSError as e:
+        print(e)
 
     from . import main
     app.register_blueprint(main.bp)
-    app.add_url_rule('/', endpoint='index')
+    # app.add_url_rule('/', endpoint='index')
 
     return app

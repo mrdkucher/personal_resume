@@ -6,10 +6,10 @@
     <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
     <ul id="nav" class="nav">
-        <li><a href="{{ url_for('main.index') }}">Home</a></li>
-        <li><a href="{{ url_for('main.about') }}">About</a></li>
-        <li class="current"><a href="{{ url_for('main.resume') }}">Resume</a></li>
-        <li><a href="{{ url_for('main.projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li class="current"><a href="{{ url_for('resume') }}">Experience</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
         <!-- <li><a href="#">Contact</a></li> -->
     </ul> <!-- end #nav -->
 
@@ -42,7 +42,7 @@
                     </p>
 
                     <p class="resume_bullet">
-                        See <a href="{{ url_for('main.projects') }}">Projects</a>.
+                        See <a href="{{ url_for('projects') }}">Projects</a>.
                     </p>
                         
                     <ul>
@@ -83,8 +83,6 @@
                     <h3>SambaNova Systems</h3>
                     <p class="info">Software Engineer <span>&bull;</span> <em class="date">June 2021</em></p>
 
-                    <p>Coming soon!</p>
-
                 </div>
 
             </div> <!-- item end -->
@@ -96,7 +94,7 @@
                 <div class="twelve columns">
 
                     <h3>University of Michigan</h3>
-                    <p class="info">Graduate Student Instrutor <span>&bull;</span> <em class="date">January 2020 -
+                    <p class="info">Graduate Student Instructor <span>&bull;</span> <em class="date">January 2020 -
                             Present</em></p>
 
                     <p class="resume_bullet">
@@ -143,7 +141,7 @@
 
             </div> <!-- item end -->
 
-            <!-- DUO 2020 -->
+            <!-- DUO 2019 -->
             <div class="row item">
 
                 <div class="twelve columns">
@@ -169,7 +167,7 @@
 
             </div> <!-- item end -->
 
-            <!-- X-Rite 2020 -->
+            <!-- X-Rite 2018 -->
             <div class="row item">
 
                 <div class="twelve columns">
@@ -194,7 +192,7 @@
 
             </div> <!-- item end -->
 
-            <!-- MedIX 2020 -->
+            <!-- MedIX 2017 -->
             <div class="row item">
 
                 <div class="twelve columns">
@@ -222,20 +220,21 @@
         </div> <!-- main-col end -->
     </div> <!-- End Work -->
 
-    <div class="row">
+    <!-- Removing Resume Download (remove backslashes from brackets to restore functionality)
+        <div class="row">
         <div class="twelve columns">
 
             <div class="download text-center">
 
                 <p>
-                    <a href="{{ url_for('main.show_static_pdf') }}" class="button"><i class="fa fa-download"></i> Download Resume</a>
+                    <a href="\{\{ url_for('show_static_pdf') \}\}" class="button"><i class="fa fa-download"></i> Download Resume</a>
                 </p>
 
             </div>
 
         </div>
 
-    </div>
+    </div> -->
 </section> <!-- End Resume -->
 
 {% endblock %}
