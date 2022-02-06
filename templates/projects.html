@@ -32,6 +32,23 @@
                     <div class="item-wrap">
 
                         <a href="#modal-01" title="">
+                            <img alt="" src="{{ url_for('static', filename='images/portfolio/mmir.jpg') }}">
+                            <div class="overlay">
+                                <div class="projects-item-meta">
+                                    <h5>Classification of Moving Objects via Change Detection and XNOR Networks in Real Time</h5>
+                                    <p>EECS 556: Image Processing</p>
+                                </div>
+                            </div>
+                            <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+
+                    </div>
+                </div> <!-- item end -->
+
+                <div class="columns projects-item">
+                    <div class="item-wrap">
+
+                        <a href="#modal-02" title="">
                             <img alt="" src="{{ url_for('static', filename='images/portfolio/fastMCD.png') }}">
                             <div class="overlay">
                                 <div class="projects-item-meta">
@@ -48,7 +65,7 @@
                 <div class="columns projects-item">
                     <div class="item-wrap">
 
-                        <a href="#modal-02" title="">
+                        <a href="#modal-03" title="">
                             <img alt="" src="{{ url_for('static', filename='images/portfolio/hive-mind.jpg') }}">
                             <div class="overlay">
                                 <div class="projects-item-meta">
@@ -65,7 +82,7 @@
                 <div class="columns projects-item">
                     <div class="item-wrap">
 
-                        <a href="#modal-03" title="">
+                        <a href="#modal-04" title="">
                             <img alt="" src="{{ url_for('static', filename='images/portfolio/colorization.jpg') }}">
                             <div class="overlay">
                                 <div class="projects-item-meta">
@@ -82,7 +99,7 @@
                 <div class="columns projects-item">
                     <div class="item-wrap">
 
-                        <a href="#modal-04" title="">
+                        <a href="#modal-05" title="">
                             <img alt="" src="{{ url_for('static', filename='images/portfolio/maze.jpg') }}">
                             <div class="overlay">
                                 <div class="projects-item-meta">
@@ -99,7 +116,7 @@
                 <div class="columns projects-item">
                     <div class="item-wrap">
 
-                        <a href="#modal-05" title="">
+                        <a href="#modal-06" title="">
                             <img alt="" src="{{ url_for('static', filename='images/portfolio/histotripsy.jpg') }}">
                             <div class="overlay">
                                 <div class="projects-item-meta">
@@ -116,7 +133,7 @@
                 <div class="columns projects-item">
                     <div class="item-wrap">
 
-                        <a href="#modal-06" title="">
+                        <a href="#modal-07" title="">
                             <img alt="" src="{{ url_for('static', filename='images/portfolio/path-visualization.png') }}">
                             <div class="overlay">
                                 <div class="projects-item-meta">
@@ -140,13 +157,42 @@
 
         <div id="modal-01" class="popup-modal mfp-hide">
 
+            <img class="scale-with-grid" src="{{ url_for('static', filename='images/portfolio/modals/m-ddf.gif') }}" alt="" />
+
+            <div class="description-box">
+                <h4>Multimodal Image Registration: Comparison of Methods for 3D MRI to 3D Ultrasound Image Registation</h4>
+                <p>EECS 556:Image Processing final project which compares and augments 3 methods for multimodal image registration/alignment.
+                Ultrasound and MRI use different technologies to create images, but both are commonly used for medical imaging. This project
+                attempts to use biological structures and image processing algorithms to guide an image registration process.
+                We used and compare Linear Correlation of Linear Combination (LC^2), Structural Similarity Context (SSC), and Deep Learning
+                with a novel, differentiable DICE loss to register the images. Pictured above is a Dense Deformation Field (DDF), which is a description of
+                a non-linear deformation of some 3D volume, and the output of our Deep Learning model.<br><br>
+
+                This work won first prize among 13 graduate projects in a KLA-sponsored competition.<br><br>
+                
+                Image credits:<br>
+                Tile: <a href="http://dx.doi.org/10.1002/mp.12268">REtroSpective Evaluation of Cerebral Tumors (RESECT)</a><br>
+                Dense Deformation Field: <a href=https://github.com/YipengHu/example-data/raw/master/media4demo/grid_warp_0.gif>DeepReg</a>
+                </p>
+            </div>
+
+            <div class="link-box">
+                <a href="https://github.com/mrdkucher/eecs556_MMIR" target="_blank">Github</a>
+                <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+        </div><!-- modal-01 End -->
+
+        <div id="modal-02" class="popup-modal mfp-hide">
+
             <img class="scale-with-grid" src="{{ url_for('static', filename='images/portfolio/modals/m-fastMCD.png') }}" alt="" />
 
             <div class="description-box">
                 <h4>Classification of Moving Objects via Change Detection and XNOR Networks in Real Time</h4>
                 <p>EECS 545: Machine Learning final project which used fastMCD change detection algorithm along with Binary Weight 
                     and XNOR networks to classify objects. Outperformed state of the art YOLO approaches in FPS, IOU, and 
-                    classification accuracy.</p>
+                    classification accuracy.
+                </p>
             </div>
 
             <div class="link-box">
@@ -154,9 +200,9 @@
                 <a class="popup-modal-dismiss">Close</a>
             </div>
 
-        </div><!-- modal-01 End -->
+        </div><!-- modal-02 End -->
 
-        <div id="modal-02" class="popup-modal mfp-hide">
+        <div id="modal-03" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="{{ url_for('static', filename='images/portfolio/modals/m-hive-mind.png') }}" alt="" />
 
@@ -172,9 +218,9 @@
                 <a class="popup-modal-dismiss">Close</a>
             </div>
 
-        </div><!-- modal-02 End -->
+        </div><!-- modal-03 End -->
 
-        <div id="modal-03" class="popup-modal mfp-hide">
+        <div id="modal-04" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="{{ url_for('static', filename='images/portfolio/modals/m-colorization.png') }}" alt="" />
 
@@ -190,9 +236,9 @@
                 <a class="popup-modal-dismiss">Close</a>
             </div>
 
-        </div><!-- modal-03 End -->
+        </div><!-- modal-04 End -->
 
-        <div id="modal-04" class="popup-modal mfp-hide">
+        <div id="modal-05" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid gif" src="{{ url_for('static', filename='images/portfolio/modals/m-maze.gif') }}" alt="" />
 
@@ -208,9 +254,9 @@
                 <a class="popup-modal-dismiss">Close</a>
             </div>
 
-        </div><!-- modal-04 End -->
+        </div><!-- modal-05 End -->
 
-        <div id="modal-05" class="popup-modal mfp-hide">
+        <div id="modal-06" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="{{ url_for('static', filename='images/portfolio/modals/m-histotripsy.jpg') }}" alt="" />
 
@@ -225,9 +271,9 @@
                 <a class="popup-modal-dismiss">Close</a>
             </div>
 
-        </div><!-- modal-05 End -->
+        </div><!-- modal-06 End -->
 
-        <div id="modal-06" class="popup-modal mfp-hide">
+        <div id="modal-07" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="{{ url_for('static', filename='images/portfolio/modals/m-path-visualization.png') }}" alt="" />
 
@@ -243,7 +289,7 @@
                 <a class="popup-modal-dismiss">Close</a>
             </div>
 
-        </div><!-- modal-06 End -->
+        </div><!-- modal-07 End -->
 
     </div> <!-- row End -->
 
