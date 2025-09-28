@@ -313,7 +313,6 @@ nav {
 
 #resume h1 span {
     border-bottom: 3px solid #4b6f58;
-    padding-bottom: 6px;
 }
 
 #resume h3 {
@@ -328,7 +327,7 @@ nav {
     padding-right: 10%;
 }
 
-.education, .work {
+.education, .work, .patents {
     margin-bottom: 48px;
     padding-bottom: 24px;
     border-bottom: 1px solid #E8E8E8;
